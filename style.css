@@ -1,89 +1,89 @@
-const config = window.BCR_CONFIG || {};
-const $ = (id) => document.getElementById(id);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+:root{--bg:#0b0b0b;--panel:#131313;--gold:#c9a45c;--gold2:#e1c17e;--white:#f4f1eb;--muted:#aaa49a;--line:#302b22}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.topline{height:3px;background:var(--gold)}.site-header{height:84px;padding:0 7.5%;display:flex;align-items:center;justify-content:space-between;background:#0b0b0b;position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff12}.brand{display:flex;flex-direction:column;align-items:center;line-height:1}.brand-mark{font:700 35px 'Oswald',sans-serif;letter-spacing:3px;color:var(--gold)}.brand-sub{font:600 8px 'DM Sans',sans-serif;letter-spacing:4px;margin-top:5px}.nav{display:flex;align-items:center;gap:34px;font-size:12px;color:#d0ccc4}.nav a:not(.nav-cta):hover,.text-link:hover{color:var(--gold)}.nav-cta{border:1px solid #8f7546;padding:13px 18px;color:var(--gold)}.nav-cta span,.button span{margin-left:13px}.menu-toggle{display:none;background:none;border:0;color:var(--gold);font-size:26px}.hero{min-height:650px;height:min(760px,calc(100vh - 87px));position:relative;display:flex;align-items:center;padding:0 10%;overflow:hidden;background:#111 url('https://images.unsplash.com/photo-1505555238685-2f4e1e6f4f9b?auto=format&fit=crop&w=2000&q=85') center 43%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,5,.94) 0%,rgba(5,5,5,.78) 45%,rgba(5,5,5,.15) 100%)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,#0b0b0b 0%,transparent 25%,transparent 75%,#0b0b0b55 100%)}.hero-content{position:relative;z-index:1;max-width:620px}.eyebrow{font-size:10px;letter-spacing:3px;font-weight:700;color:#ddd;margin:0 0 20px}.eyebrow span{display:inline-block;width:25px;height:1px;background:var(--gold);vertical-align:middle;margin-right:10px}.eyebrow.gold{color:var(--gold)}h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:500;margin:0}h1{font-size:clamp(55px,8vw,100px);line-height:.98;letter-spacing:1px}h1 em,h2 em,.quote-band em{font-style:normal;color:var(--gold)}.hero-copy{max-width:440px;color:#c4c0b9;line-height:1.8;font-size:14px;margin:27px 0 32px}.hero-actions{display:flex;align-items:center;gap:30px}.button{display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;font:700 11px 'DM Sans',sans-serif;letter-spacing:1px;text-transform:uppercase;padding:17px 23px;transition:.2s}.button-gold{background:var(--gold);color:#111}.button-gold:hover{background:var(--gold2);transform:translateY(-2px)}.text-link{font-size:11px;letter-spacing:1px;text-transform:uppercase}.text-link span{color:var(--gold);margin-left:8px}.hero-note{font-size:9px;letter-spacing:2px;color:#b5afa4;margin-top:76px;display:flex;align-items:center;gap:12px}.note-line{width:35px;height:1px;background:var(--gold)}.hero-stamp{position:absolute;right:10%;bottom:12%;z-index:1;border:1px solid #c9a45c88;width:112px;height:112px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--gold);transform:rotate(-12deg)}.hero-stamp strong{font:600 35px 'Oswald';letter-spacing:3px}.hero-stamp span{font-size:7px;letter-spacing:2px}.section{padding:105px 10%}.section-kicker{font-size:9px;letter-spacing:2px;color:#777;margin-bottom:34px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:end}.intro h2,.section h2{font-size:clamp(43px,5vw,65px);line-height:1.05}.intro-text{max-width:460px}.intro-text p,.booking-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:#aaa49a;margin:0 0 25px}.under-link{font-size:11px;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--gold);padding-bottom:9px}.under-link span{color:var(--gold);margin-left:12px}.services{background:#101010}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px}.section-heading .eyebrow{margin-bottom:14px}.heading-side{font-size:12px;line-height:1.8;color:#888;text-align:right;margin:0 0 5px}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service-card{position:relative;background:#171717;border:1px solid #ffffff0d;padding:27px 23px 22px;min-height:255px;transition:.25s}.service-card:hover,.service-card.featured{border-color:#8d7041}.service-number{font:12px 'Oswald';color:#71654e}.service-icon{font-size:25px;color:var(--gold);margin:18px 0 12px}.service-card h3{font-size:21px;letter-spacing:1px}.service-card p{font-size:11px;line-height:1.7;color:#928d84;min-height:38px}.service-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff17;padding-top:15px;margin-top:16px}.service-bottom span{font-size:8px;letter-spacing:1px;color:#888}.service-bottom strong{font:22px 'Oswald';color:var(--gold)}.price-note{font-size:10px;color:#777;margin:18px 0 0}.quote-band{padding:72px 10%;text-align:center;background:linear-gradient(110deg,#18150f,#0d0d0d 50%,#18150f);border-top:1px solid #8c704333;border-bottom:1px solid #8c704333}.quote-mark{font:70px Georgia;color:var(--gold);height:45px}.quote-band p{font:clamp(20px,3vw,31px) 'Oswald';letter-spacing:1px;line-height:1.5}.quote-band>span{font-size:8px;letter-spacing:3px;color:#8c8579}.booking{background:#0c0c0c}.booking-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;align-items:start}.booking-copy h2{font-size:clamp(48px,6vw,72px);margin-bottom:23px}.booking-copy>p:not(.eyebrow){max-width:400px}.booking-info{margin-top:42px;display:grid;gap:20px}.booking-info>div{display:flex;align-items:center;gap:16px}.info-icon{width:38px;height:38px;border:1px solid #8d704177;color:var(--gold);display:grid;place-items:center}.booking-info p{font-size:11px;line-height:1.8;color:#999;margin:0}.booking-info strong{color:#eee;font-size:12px}.booking-form{background:#151515;border:1px solid #ffffff12;padding:34px}.form-heading{display:flex;justify-content:space-between;border-bottom:1px solid #ffffff18;padding-bottom:18px;margin-bottom:25px;font-size:10px;letter-spacing:1.5px;color:var(--gold);font-weight:700}.form-step{color:#777}.booking-form label{display:block;font-size:10px;color:#d5d0c6;margin:17px 0 8px}.booking-form input,.booking-form select,.booking-form textarea{width:100%;border:1px solid #38342d;background:#0e0e0e;color:#eee;padding:13px 14px;font:12px 'DM Sans';border-radius:0;outline:none}.booking-form input:focus,.booking-form select:focus,.booking-form textarea:focus{border-color:var(--gold)}.booking-form input::placeholder,.booking-form textarea::placeholder{color:#68645e}.booking-form select:invalid{color:#777}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.optional{color:#777}.submit-button{width:100%;margin-top:23px}.form-disclaimer{font-size:9px;line-height:1.6;color:#817b71;text-align:center;margin:13px 0 0}.form-error{font-size:11px;color:#e49a8d;margin:10px 0 0}.footer{padding:36px 8%;border-top:1px solid #ffffff16;display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-brand .brand-mark{font-size:27px}.footer-brand .brand-sub{font-size:7px}.footer>p,.footer>span{font-size:8px;letter-spacing:1.5px;color:#777}.floating-whatsapp{position:fixed;right:23px;bottom:23px;width:52px;height:52px;border-radius:50%;background:var(--gold);color:#111;display:grid;place-items:center;font-size:24px;z-index:15;box-shadow:0 5px 25px #0008}
+@media(max-width:900px){.site-header{padding:0 5%}.nav{gap:18px}.section{padding:80px 7%}.hero{padding:0 7%}.service-grid{grid-template-columns:repeat(2,1fr)}.booking-grid{gap:6%}}
+@media(max-width:680px){.site-header{height:72px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#101010;padding:22px 7%;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line)}.nav.open{display:flex}.nav a{padding:14px 0;border-bottom:1px solid #ffffff10}.nav .nav-cta{margin-top:12px;text-align:center;padding:14px}.hero{min-height:640px;height:calc(100svh - 75px);padding:0 7%;background-position:58% center}.hero:before{background:linear-gradient(90deg,rgba(5,5,5,.94),rgba(5,5,5,.72) 75%,rgba(5,5,5,.45))}.hero-stamp{width:82px;height:82px;right:7%;bottom:8%}.hero-stamp strong{font-size:26px}.hero-stamp span{font-size:6px}.hero-note{margin-top:55px}.hero-actions{align-items:flex-start;flex-direction:column;gap:22px}.section{padding:70px 7%}.intro-grid,.booking-grid{grid-template-columns:1fr;gap:28px}.intro-grid{gap:20px}.section-heading{align-items:start;gap:20px;flex-direction:column}.heading-side{text-align:left}.service-grid{gap:10px}.service-card{padding:20px 16px;min-height:245px}.service-card h3{font-size:18px}.service-card p{font-size:10px}.service-bottom strong{font-size:19px}.quote-band{padding:60px 7%}.booking-form{padding:24px 18px}.form-row{grid-template-columns:1fr 1fr;gap:10px}.footer{padding:30px 7%;flex-direction:column;text-align:center;gap:12px}.floating-whatsapp{right:16px;bottom:16px;width:48px;height:48px}}
+@media(max-width:380px){.service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.form-row{grid-template-columns:1fr}}
 
-$("year").textContent = new Date().getFullYear();
-$("hoursText").textContent = config.hoursText || "Consulte os horários";
-$("addressText").textContent = config.address || "Santos – SP";
 
-const menuToggle = $("menuToggle");
-const nav = $("nav");
-menuToggle.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
-  menuToggle.textContent = open ? "×" : "☰";
-});
-nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-  nav.classList.remove("open");
-  menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.textContent = "☰";
-}));
+/* LOCALIZAÇÃO BCR */
 
-const dateInput = $("date");
-const today = new Date();
-const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
-dateInput.min = localToday;
-
-const timeSelect = $("time");
-function buildTimes() {
-  const [openH, openM] = (config.openingTime || "09:00").split(":").map(Number);
-  const [closeH, closeM] = (config.closingTime || "19:00").split(":").map(Number);
-  const interval = Number(config.intervalMinutes) || 30;
-  const start = openH * 60 + openM;
-  const end = closeH * 60 + closeM;
-  for (let mins = start; mins < end; mins += interval) {
-    const h = String(Math.floor(mins / 60)).padStart(2, "0");
-    const m = String(mins % 60).padStart(2, "0");
-    const option = document.createElement("option");
-    option.value = `${h}:${m}`;
-    option.textContent = `${h}:${m}`;
-    timeSelect.appendChild(option);
-  }
-}
-buildTimes();
-
-const waNumber = String(config.whatsapp || "").replace(/\D/g, "");
-const floating = $("floatingWhatsapp");
-if (waNumber && !waNumber.endsWith("9999999999")) {
-  floating.href = `https://wa.me/${waNumber}?text=${encodeURIComponent("Olá! Gostaria de informações sobre os serviços da BCR Barber Shop.")}`;
-} else {
-  floating.style.display = "none";
+.location-section {
+  padding: 100px 10vw;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+  background: linear-gradient(135deg, #11100d, #080808);
+  border-top: 1px solid rgba(201,164,92,.2);
 }
 
-$("bookingForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const error = $("formError");
-  error.textContent = "";
-  if (!waNumber || waNumber === "5513999999999") {
-    error.textContent = "O WhatsApp da barbearia ainda não foi configurado. Atualize o número no arquivo config.js.";
-    return;
+.location-content h2 {
+  font: 900 clamp(48px, 6vw, 75px)/.95 "Barlow Condensed";
+  margin: 25px 0;
+}
+
+.location-content h2 span {
+  color: #f1d99d;
+}
+
+.location-content > p {
+  color: #a5a198;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 350px;
+}
+
+.location-address {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 35px 0;
+  padding: 22px 0;
+  border-top: 1px solid rgba(201,164,92,.2);
+  border-bottom: 1px solid rgba(201,164,92,.2);
+}
+
+.location-icon {
+  font-size: 35px;
+  color: #c9a45c;
+}
+
+.location-address strong {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #f1d99d;
+}
+
+.location-address p {
+  color: #eee9dc;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.location-address small {
+  color: #89847a;
+}
+
+.location-map {
+  height: 390px;
+  border: 1px solid rgba(201,164,92,.4);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+.location-map iframe {
+  filter: grayscale(1) invert(.88) contrast(.85);
+}
+
+@media (max-width: 650px) {
+  .location-section {
+    grid-template-columns: 1fr;
+    padding: 75px 7vw;
+    gap: 35px;
   }
-  const name = $("customerName").value.trim();
-  const phone = $("customerPhone").value.trim();
-  const service = $("service").value;
-  const date = dateInput.value;
-  const time = timeSelect.value;
-  const notes = $("notes").value.trim();
-  if (!name || !phone || !service || !date || !time) {
-    error.textContent = "Preencha todos os campos obrigatórios.";
-    return;
+
+  .location-map {
+    height: 300px;
   }
-  if (date < localToday) {
-    error.textContent = "Escolha uma data de hoje em diante.";
-    return;
-  }
-  const [year, month, day] = date.split("-");
-  const dateBR = `${day}/${month}/${year}`;
-  const message = [
-    "Olá! Gostaria de solicitar um agendamento na BCR Barber Shop.",
-    "",
-    `Nome: ${name}`,
-    `Telefone: ${phone}`,
-    `Serviço: ${service}`,
-    `Data desejada: ${dateBR}`,
-    `Horário desejado: ${time}`,
-    notes ? `Observação: ${notes}` : "",
-    "",
-    "Aguardo a confirmação da disponibilidade. Obrigado!"
-  ].filter(Boolean).join("\n");
-  window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
-});
+}
